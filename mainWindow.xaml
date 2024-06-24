@@ -1,0 +1,41 @@
+<Window x:Class="YourNamespace.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Bulk Email Sender" Height="450" Width="600">
+    <Grid>
+        <!-- File Selection Section -->
+        <StackPanel Margin="10">
+            <TextBlock FontWeight="Bold" FontSize="16" Text="File Selection" Margin="0,0,0,10"/>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="Select File:" VerticalAlignment="Center"/>
+                <TextBox Name="txtFilePath" Width="300" Margin="10,0"/>
+                <Button Content="Browse" Click="BrowseButtonClick" Margin="10,0"/>
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Email Credentials Section -->
+        <StackPanel Margin="10">
+            <TextBlock FontWeight="Bold" FontSize="16" Text="Email Credentials" Margin="0,0,0,10"/>
+            <StackPanel Margin="0,0,0,10">
+                <TextBlock Text="Sender Email:" VerticalAlignment="Center"/>
+                <TextBox Name="txtSenderEmail" Width="300" Margin="10,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="Sender Password:" VerticalAlignment="Center"/>
+                <PasswordBox Name="txtSenderPassword" Width="300" Margin="10,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="SMTP Server:" VerticalAlignment="Center"/>
+                <TextBox Name="txtSmtpServer" Width="300" Margin="10,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="SMTP Port:" VerticalAlignment="Center"/>
+                <TextBox Name="txtSmtpPort" Width="50" Margin="10,0"/>
+            </StackPanel>
+            <CheckBox Name="chkUseSsl" Content="Use SSL/TLS" Margin="10,0"/>
+        </StackPanel>
+
+        <!-- Start Button -->
+        <Button Content="Start Sending Emails" Click="StartButtonClick" HorizontalAlignment="Center" Margin="0,20"/>
+    </Grid>
+</Window>

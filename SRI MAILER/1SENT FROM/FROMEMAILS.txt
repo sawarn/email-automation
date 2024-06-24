@@ -1,0 +1,13 @@
+rboppudy@gmail.com
+password 
+12345678
+smtp.gmail.com
+
+innovatorbsr@gmail.com
+password 
+12345678
+smtp.gmail.com
+
+sritree@gmail.compassword 
+12345678
+smtp.gmail.com
